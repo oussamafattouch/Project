@@ -1,0 +1,32 @@
+<h1>Recherche d'un Client</h1>
+<form action="" method="POST">
+    Recherche : <input type="text" name="input_recherche"/>
+    <input type="submit" name="rechercher" value="Rechercher"/>
+</form>
+{% if clients is empty %}
+
+Aucun client trouvé
+
+{% else %}
+<table border="1">
+    <tr>
+        <td>id</td>
+        <td>Nom</td>
+        <td>Prenom</td>
+        <td>date_naissance</td>
+        <td>TEL</td>
+        <td>date_permis</td>
+    </tr>
+    {% for client in clients %}
+        <tr>
+            <td>{{ client.id }}</td>
+            <td>{{ client.Nom }}</td>
+            <td>{{ client.Prenom }}</td>
+            <td>{{ client.date_naissance }}</td>
+            <td>{{ client.TEL }}</td>
+            <td>{{ client.date_permis }}</td>
+
+        </tr>
+    {% endfor %}
+</table>
+{% endif %}

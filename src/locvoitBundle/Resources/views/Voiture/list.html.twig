@@ -1,0 +1,17 @@
+<h1>Liste des Voitures</h1>
+<table border="1">
+    <tr>
+        <td>Matricule</td>
+        <td>Disponiblité</td>
+        <td>Prix</td>
+
+    </tr>
+    {% for voiture in voitures %}
+        <tr>
+            <td>{{ voiture.mat }}</td>
+            <td>{{ voiture.disponiblite }}</td>
+            <td>{{ voiture.prix }}</td>
+            <td><a href="{{ path("delete_voiture", {'mat': voiture.mat}) }}">Supprimer</a></td>
+        </tr>
+    {% endfor %}
+</table>

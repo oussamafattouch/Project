@@ -1,0 +1,22 @@
+<h1>Liste des Clients</h1>
+<table border="1">
+    <tr>
+        <td>id</td>
+        <td>Nom</td>
+        <td>Prenom</td>
+        <td>date_naissance</td>
+        <td>TEL</td>
+        <td>date_permis</td>
+    </tr>
+    {% for client in clients %}
+      <tr>
+          <td>{{ client.id }}</td>
+          <td>{{ client.Nom }}</td>
+          <td>{{ client.Prenom }}</td>
+          <td>{{ client.date_naissance }}</td>
+          <td>{{ client.TEL }}</td>
+          <td>{{ client.date_permis }}</td>
+          <td><a href="{{ path("delete_client", {'id': client.id}) }}">Supprimer</a></td>
+      </tr>
+    {% endfor %}
+</table>

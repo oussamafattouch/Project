@@ -1,0 +1,61 @@
+affichage_client:
+    path:      /listClient
+    defaults:  { _controller: locvoitBundle:Client:list}
+
+affichage_location:
+    path:      /listLocation
+    defaults:  { _controller: locvoitBundle:Location:list}
+
+affichage_voiture:
+    path:      /listVoiture
+    defaults:  { _controller: locvoitBundle:Voiture:list}
+
+affichage_manager:
+    path:      /listManager
+    defaults:  { _controller: locvoitBundle:Manager:list}
+add_client:
+    path:      /addClient
+    defaults:  { _controller: locvoitBundle:Client:add}
+add_voiture:
+    path:      /addVoiture
+    defaults:  { _controller: locvoitBundle:Voiture:add}
+
+add_manager:
+    path:      /addManager
+    defaults:  { _controller: locvoitBundle:Manager:add}
+
+add_lcoation:
+    path:      /addLocation
+    defaults:  { _controller: locvoitBundle:Location:add}
+
+delete_client:
+    path:      /deleteClient/{id}
+    defaults:  { _controller: locvoitBundle:Client:delete}
+
+delete_voiture:
+    path:      /deleteVoiture/{mat}
+    defaults:  { _controller: locvoitBundle:Voiture:delete}
+
+delete_location:
+    path:      /deleteLocation/{idl}
+    defaults:  { _controller: locvoitBundle:Location:delete}
+
+delete_manager:
+    path:      /deleteManager/{idm}
+    defaults:  { _controller: locvoitBundle:Manager:delete}
+
+recherche_Client:
+    path:      /rechercherClient
+    defaults:  { _controller: locvoitBundle:Client:recherche }
+
+recherche_Voiture:
+    path:      /rechercherVoiture
+    defaults:  { _controller: locvoitBundle:Voiture:recherche }
+
+recherche_Location:
+    path:      /rechercherLocation
+    defaults:  { _controller: locvoitBundle:Location:recherche }
+
+recherche_Manager:
+    path:      /rechercherManager
+    defaults:  { _controller: locvoitBundle:Manager:recherche }

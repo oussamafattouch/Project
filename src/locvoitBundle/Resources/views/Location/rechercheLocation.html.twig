@@ -1,0 +1,31 @@
+<h1>Recherche d'une Location</h1>
+<form action="" method="POST">
+    Recherche : <input type="text" name="input_recherche"/>
+    <input type="submit" name="rechercher" value="Rechercher"/>
+</form>
+{% if locations is empty %}
+
+Aucune location trouvée
+
+{% else %}
+<table border="1">
+    <tr>
+        <td>idl</td>
+        <td>duree</td>
+        <td>datedebut</td>
+        <td>datefin</td>
+        <td>idClient</td>
+        <td>Voiture</td>
+    </tr>
+    {% for location in locations %}
+        <tr>
+            <td>{{ location.idl }}</td>
+            <td>{{ location.duree }}</td>
+            <td>{{ location.datedebut }}</td>
+            <td>{{ location.datefin }}</td>
+            <td>{{ location.id }}</td>
+            <td>{{ location.mat }}</td>
+         </tr>
+    {% endfor %}
+</table>
+{% endif %}

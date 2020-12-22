@@ -1,0 +1,16 @@
+<h1>Liste des Managers</h1>
+<table border="1">
+    <tr>
+        <td>idm</td>
+        <td>Nom</td>
+        <td>Prenom</td>
+    </tr>
+    {% for manager in managers %}
+        <tr>
+            <td>{{ manager.idm }}</td>
+            <td>{{ manager.Nom }}</td>
+            <td>{{ manager.Prenom }}</td>
+            <td><a href="{{ path("delete_manager", {'idm': manager.idm}) }}">Supprimer</a></td>
+
+    {% endfor %}
+</table>
