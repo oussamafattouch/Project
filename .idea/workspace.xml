@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="60ec02ad-5a37-46b2-8f6d-3be8a437901e" name="Default Changelist" comment="" />
+    <list default="true" id="60ec02ad-5a37-46b2-8f6d-3be8a437901e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locvoitBundle/Controller/ClientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/locvoitBundle/Controller/ClientController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locvoitBundle/Controller/LocationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/locvoitBundle/Controller/LocationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locvoitBundle/Controller/ManagerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/locvoitBundle/Controller/ManagerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locvoitBundle/Controller/VoitureController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/locvoitBundle/Controller/VoitureController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locvoitBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/locvoitBundle/Resources/config/routing.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/locvoitBundle/Resources/views/Client/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/locvoitBundle/Resources/views/Client/list.html.twig" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +38,9 @@
     <execution>
       <phar pharPath="$PROJECT_DIR$/composer.phar" interpreterId="dbe3277d-ebea-4b56-9b79-9ca2f14972da" />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -105,14 +134,33 @@
       <workItem from="1608146870553" duration="8121000" />
       <workItem from="1608488482331" duration="2172000" />
       <workItem from="1608580749411" duration="4236000" />
-      <workItem from="1608634556042" duration="2528000" />
+      <workItem from="1608634556042" duration="3375000" />
+      <workItem from="1608751916853" duration="5289000" />
+      <workItem from="1608833470374" duration="3528000" />
+      <workItem from="1609079283038" duration="13155000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="705" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1609082455701">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="705" y="321" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1609082455701" />
     <state x="1084" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1607583832110">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -125,22 +173,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="684" y="396" key="ComposerCompositePathDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607546062563" />
-    <state width="1877" height="277" key="GridCell.Tab.0.bottom" timestamp="1608635111290">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1608637358204">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1608635111290" />
-    <state width="1877" height="277" key="GridCell.Tab.0.center" timestamp="1608635111289">
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1608637358204" />
+    <state width="1877" height="252" key="GridCell.Tab.0.bottom" timestamp="1609097499750">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1608635111289" />
-    <state width="1877" height="277" key="GridCell.Tab.0.left" timestamp="1608635111289">
+    <state width="1877" height="252" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609097499750" />
+    <state width="1877" height="252" key="GridCell.Tab.0.center" timestamp="1609097499750">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1608635111289" />
-    <state width="1877" height="277" key="GridCell.Tab.0.right" timestamp="1608635111289">
+    <state width="1877" height="252" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609097499750" />
+    <state width="1877" height="252" key="GridCell.Tab.0.left" timestamp="1609097499750">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1608635111289" />
+    <state width="1877" height="252" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609097499750" />
+    <state width="1877" height="252" key="GridCell.Tab.0.right" timestamp="1609097499750">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="252" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609097499750" />
     <state x="730" y="242" key="NewPhpClassDialog" timestamp="1608147122950">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -153,9 +205,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607546068637" />
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1608635111103">
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1609097499561">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1608635111103" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1609097499561" />
   </component>
 </project>

@@ -66,4 +66,22 @@ class VoitureController extends Controller
         return $this->render('@locvoit/Voiture/rechercheVoiture.html.twig',
             array('voitures'=>$voitures));
     }
+    public function modAction(Request $request){
+        $em = $this->container->get('doctrine')->getEntityManager();
+        $voitures=$em->getRepository('locvoitBundle:Voiture')->findALL();
+        if ($request->getMethod("POST")){
+            $motcle=$request->get('mat');
+            $motclee=$request->get('disponiblite');
+            $motcleee=$request->get('prix');
+            $query=$em->createQuery(
+                "Update locvoitBundle:Voiture m Set  m.disponiblite ='$motclee',
+                 m.prix ='$motcleee'
+                  WHERE m.mat ='$motcle' "
+            );
+            $voitures=$query->getResult();
+
+        }
+        return $this->render('@locvoit/Voiture/mod.html.twig',
+            array('voitures'=>$voitures));
+    }
 }

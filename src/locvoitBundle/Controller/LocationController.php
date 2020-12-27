@@ -75,4 +75,29 @@ class LocationController extends Controller
         return $this->render('@locvoit/Location/rechercheLocation.html.twig',
             array('locations'=>$locations));
     }
+    public function modAction(Request $request){
+        $em = $this->container->get('doctrine')->getEntityManager();
+        $locations=$em->getRepository('locvoitBundle:Location')->findALL();
+        if ($request->getMethod("POST")){
+            $motcle=$request->get('idl');
+            $duree=$request->get('duree');
+            $datedebut=$request->get('datedebut');
+            $datefin=$request->get('datefin');
+            $id=$request->get('client');
+            $mat=$request->get('voiture');
+            $query=$em->createQuery(
+                "Update locvoitBundle:Location k Set k.duree= '$duree',
+                 k.datedebut ='$datedebut',
+                 k.datefin ='$datefin',
+                 k.id ='$id',
+                 k.mat ='$mat'
+                  WHERE k.idl = '$motcle' "
+            );
+            $locations=$query->getResult();
+
+        }
+        return $this->render('@locvoit/Location/mod.html.twig',
+            array('locations'=>$locations));
+    }
+
 }

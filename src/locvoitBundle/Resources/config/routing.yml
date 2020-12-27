@@ -59,3 +59,20 @@ recherche_Location:
 recherche_Manager:
     path:      /rechercherManager
     defaults:  { _controller: locvoitBundle:Manager:recherche }
+
+mod_Client:
+    path:      /modClient
+    defaults:  { _controller: locvoitBundle:Client:mod }
+
+
+mod_Voiture:
+    path:      /modVoiture
+    defaults:  { _controller: locvoitBundle:Voiture:mod }
+
+mod_Manager:
+    path:      /modManager
+    defaults:  { _controller: locvoitBundle:Manager:mod }
+
+mod_Location:
+    path:      /modLocation
+    defaults:  { _controller: locvoitBundle:Location:mod }

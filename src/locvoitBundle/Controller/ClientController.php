@@ -63,4 +63,29 @@ class ClientController extends Controller
         return $this->render('@locvoit/Client/rechercheClient.html.twig',
         array('clients'=>$clients));
     }
+    public function modAction(Request $request){
+        $em = $this->container->get('doctrine')->getEntityManager();
+        $clients=$em->getRepository('locvoitBundle:Client')->findALL();
+        if ($request->getMethod("POST")){
+            $motcle=$request->get('id');
+            $motclee=$request->get('Nom');
+            $mot=$request->get('Prenom');
+            $datenais=$request->get('date_naissance');
+            $tel=$request->get('TEL');
+            $dateper=$request->get('date_permis');
+            $query=$em->createQuery(
+                "Update locvoitBundle:Client k Set k.Nom= '$motclee',
+                 k.Prenom ='$mot',
+                 k.date_naissance ='$datenais',
+                 k.TEl ='$tel',
+                 k.date_permis ='$dateper'
+                  WHERE k.id = '$motcle' "
+            );
+            $clients=$query->getResult();
+
+        }
+        return $this->render('@locvoit/Client/mod.html.twig',
+            array('clients'=>$clients));
+    }
+
 }

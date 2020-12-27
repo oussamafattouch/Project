@@ -64,4 +64,24 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
          return $this->render('@locvoit/Manager/rechercheManager.html.twig',
              array('managers'=>$managers));
      }
-}
+     public function modAction(Request $request){
+         $em = $this->container->get('doctrine')->getEntityManager();
+         $managers=$em->getRepository('locvoitBundle:Manager')->findALL();
+         if ($request->getMethod("POST")){
+             $motcle=$request->get('idm');
+             $motclee=$request->get('Nom');
+             $mot=$request->get('Prenom');
+
+             $query=$em->createQuery(
+                 "Update locvoitBundle:Manager k Set k.Nom= '$motclee',
+                  k.Prenom ='$mot'
+                  WHERE k.idm = '$motcle' "
+             );
+             $managers=$query->getResult();
+
+         }
+         return $this->render('@locvoit/Manager/mod.html.twig',
+             array('managers'=>$managers));
+     }
+
+ }
